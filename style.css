@@ -1,4 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Commissioner:wght@100..900&display=swap');
+
+:root {
+    --green-400: hsl(176, 50%, 47%);
+    --green-700: hsl(176, 72%, 28%);
+    --green-800: hsl(176, 75%, 21%);
+
+    --black: hsl(0, 0%, 0%);
+    --gray500: hsl(0, 0%, 48%);
+
+    --box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.191);
+}
+
 * {
+    font-family: 'Commissioner', sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -7,6 +21,7 @@
 button {
     border: none;
     cursor: pointer;
+    background: none;
 }
 
 ol,
@@ -21,11 +36,12 @@ a {
 
 /* Nav Bar */
 nav {
-    background-color: red;
-    padding: 4% 5%;
-    position: relative;
+    z-index: 999;
+    padding: 1rem 1rem;
+    position: absolute;
     top: 0;
     left: 0;
+    width: 100%;
     display: flex;
     justify-content: space-between;
 }
@@ -33,4 +49,69 @@ nav {
 .desktop-nav ul {
     display: none;
     gap: 2rem;
+}
+
+/* Hero */
+.hero {
+    width: 100%;
+    background-image: url('./images/image-hero-mobile.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 50vh;
+}
+
+.hero-card {
+    box-shadow: var(--box-shadow);
+    background-color: white;
+    position: relative;
+    top: 16rem;
+    border-radius: 1rem;
+    padding: 0 2rem 2rem;
+    margin: 0 8%;
+}
+
+.mastercraft-logo {
+    position: relative;
+    left: 50%;
+    top: -2rem;
+    transform: translateX(-50%);
+}
+
+.text-box-hero {
+    text-align: center;
+}
+
+.text-box-hero h3 {
+    padding: 0 4rem;
+}
+
+.text-box-hero p {
+    color: var(--gray500);
+    line-height: 1.8rem;
+    margin-top: 1.2rem;
+}
+
+.cta-buttons {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+
+    .btn-action {
+        background-color: var(--green-400);
+        padding: 0 2rem;
+        color: #fff;
+        font-weight: 500;
+        border-radius: 2rem;
+        transition: background-color 0.3s ease;
+
+        &:hover {
+            background-color: var(--green-700);
+        }
+
+        &:active {
+            background-color: var(--green-800);
+        }
+    }
 }
