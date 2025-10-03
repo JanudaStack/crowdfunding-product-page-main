@@ -102,22 +102,22 @@ nav {
     display: flex;
     justify-content: center;
     gap: 1rem;
+}
 
-    .btn-action {
-        background-color: var(--green-400);
-        padding: 0 2rem;
-        color: #fff;
-        font-weight: 500;
-        border-radius: 2rem;
-        transition: background-color 0.3s ease;
+.btn-action {
+    background-color: var(--green-400);
+    padding: 0 2rem;
+    color: #fff;
+    font-weight: 500;
+    border-radius: 2rem;
+    transition: background-color 0.3s ease;
 
-        &:hover {
-            background-color: var(--green-700);
-        }
+    &:hover {
+        background-color: var(--green-700);
+    }
 
-        &:active {
-            background-color: var(--green-800);
-        }
+    &:active {
+        background-color: var(--green-800);
     }
 }
 
@@ -172,7 +172,7 @@ nav {
 
 .about {
     position: relative;
-    top: 45rem;
+    top: 47rem;
 }
 
 .about h3 {
@@ -183,4 +183,69 @@ nav {
     color: var(--gray-500);
     line-height: 1.8rem;
     text-wrap-style: pretty;
+}
+
+/* Products */
+.product-container {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.8rem;
+}
+
+.product-card {
+    box-shadow: var(--box-shadow);
+    background-color: white;
+    border-radius: 1rem;
+    padding: 1.5rem;
+}
+
+.product-header {
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+}
+
+.product-header span {
+    color: var(--green-400);
+}
+
+.product-card p {
+    margin: 1.2rem 0;
+    color: var(--gray-500);
+}
+.item-quantity {
+    margin-bottom: 1.4rem;
+}
+
+.item-quantity span {
+    font-size: 1.8em;
+    font-weight: 700;
+    padding-right: 0.4rem;
+}
+
+.btn-active {
+    background-color: var(--green-400);
+    padding: 1rem 2rem;
+    color: #fff;
+    font-weight: 500;
+    border-radius: 2rem;
+    transition: background-color 0.3s ease;
+}
+
+.btn-active:hover {
+    background-color: var(--green-700);
+}
+
+.btn-active:active {
+    background-color: var(--green-800);
+}
+
+.btn-disable {
+    background-color: hsla(0, 0%, 48%, 0.275);
+    padding: 1rem 2rem;
+    color: #fff;
+    font-weight: 500;
+    border-radius: 2rem;
+    cursor: not-allowed;
 }
