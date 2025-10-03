@@ -52,6 +52,15 @@ nav {
 }
 
 /* Hero */
+
+.card {
+    box-shadow: var(--box-shadow);
+    background-color: white;
+    border-radius: 1rem;
+    padding: 2rem 2rem 2rem;
+    margin: 0 8%;
+}
+
 .hero {
     width: 100%;
     background-image: url('./images/image-hero-mobile.jpg');
@@ -62,13 +71,9 @@ nav {
 }
 
 .hero-card {
-    box-shadow: var(--box-shadow);
-    background-color: white;
     position: relative;
     top: 16rem;
-    border-radius: 1rem;
     padding: 0 2rem 2rem;
-    margin: 0 8%;
 }
 
 .mastercraft-logo {
@@ -117,13 +122,8 @@ nav {
 }
 
 .growth-details {
-    box-shadow: var(--box-shadow);
-    background-color: white;
     position: relative;
     top: 18rem;
-    border-radius: 1rem;
-    padding: 2rem 2rem 2rem;
-    margin: 0 8%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -158,7 +158,7 @@ nav {
 
 .progress-bar-container {
     background-color: hsla(0, 0%, 48%, 0.069);
-    width: 90%;
+    width: 100%;
     border-radius: 2rem;
     height: 0.6rem;
 }
@@ -168,4 +168,19 @@ nav {
     border-radius: 2rem;
     height: 0.6rem;
     background-color: var(--green-400);
+}
+
+.about {
+    position: relative;
+    top: 45rem;
+}
+
+.about h3 {
+    margin-bottom: 1.2rem;
+}
+
+.about p {
+    color: var(--gray-500);
+    line-height: 1.8rem;
+    text-wrap-style: pretty;
 }
