@@ -61,6 +61,13 @@ nav {
     margin: 0 8%;
 }
 
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+}
+
 .hero {
     width: 100%;
     background-image: url('./images/image-hero-mobile.jpg');
@@ -71,6 +78,8 @@ nav {
 }
 
 .hero-card {
+    /* max-width: 840px; */
+    margin: 0 18%;
     position: relative;
     top: 16rem;
     padding: 0 2rem 2rem;
@@ -104,6 +113,21 @@ nav {
     gap: 1rem;
 }
 
+.bookmark-btn {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.bookmark-btn div {
+    z-index: -1;
+    position: absolute;
+    left: 1rem;
+    background-color: hsl(0, 0%, 48%);
+    border-radius: 2rem;
+    padding: 1.23rem 1rem;
+}
+
 .btn-action {
     background-color: var(--green-400);
     padding: 0 2rem;
@@ -122,12 +146,15 @@ nav {
 }
 
 .growth-details {
+    margin: 0 18%;
     position: relative;
     top: 18rem;
+}
+
+.details-container {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 2rem;
 }
 
 .growth-details .growth-numbers {
@@ -137,12 +164,12 @@ nav {
     width: 50%;
 }
 
-.growth-details div:nth-child(-n + 2)::after {
-    content: '';
-    margin-top: 2rem;
-    height: 0.05rem;
-    width: 5rem;
+.horizontal-line {
+    width: 1px;
+    height: 100px;
     background-color: var(--gray-500);
+    margin: 0 auto;
+    transform: rotate(90deg);
 }
 
 .growth-details div span {
@@ -159,6 +186,7 @@ nav {
 .progress-bar-container {
     background-color: hsla(0, 0%, 48%, 0.069);
     width: 100%;
+    margin-top: 3rem;
     border-radius: 2rem;
     height: 0.6rem;
 }
@@ -171,8 +199,10 @@ nav {
 }
 
 .about {
+    margin: 0 12%;
+    padding-bottom: 2rem;
     position: relative;
-    top: 47rem;
+    top: 52rem;
 }
 
 .about h3 {
@@ -248,4 +278,39 @@ nav {
     font-weight: 500;
     border-radius: 2rem;
     cursor: not-allowed;
+}
+
+@media (min-width: 768px) {
+    .hero {
+        background-image: url('./images/image-hero-desktop.jpg');
+        background-position: top;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    .details-container {
+        flex-direction: row;
+        gap: 2rem;
+        align-items: start;
+    }
+
+    .about {
+        top: 32rem;
+    }
+
+    .horizontal-line {
+        display: none;
+    }
+
+    .vertical-line {
+        width: 2px;
+        height: 60px;
+        background-color: var(--gray-500);
+        margin: auto auto;
+        transform: rotate(180deg);
+    }
+
+    .cta-buttons {
+        justify-content: space-around;
+    }
 }
