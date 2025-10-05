@@ -42,58 +42,69 @@
             </nav>
         </header>
 
-        <section class="hero">
-            <div class="container">
-                <div class="card hero-card">
+        <main>
+            <!-- Hero Section -->
+            <section class="hero" id="home">
+                <div class="hero__card card">
                     <img
                         src="./images/logo-mastercraft.svg"
-                        alt="mastercraft-logo"
-                        class="mastercraft-logo"
+                        alt="Mastercraft logo"
+                        class="hero__logo"
                     />
-                    <div class="text-box-hero">
-                        <h3>Mastercraft Bamboo Monitor Riser</h3>
-                        <p>
+
+                    <div class="hero__text">
+                        <h1 class="hero__title">
+                            Mastercraft Bamboo Monitor Riser
+                        </h1>
+                        <p class="hero__subtitle">
                             A beautifully handcrafted monitor stand to reduce
-                            neck and eye strain
+                            neck and eye strain.
                         </p>
                     </div>
-                    <div class="cta-buttons">
-                        <button class="btn-action">Back this project</button>
-                        <button class="bookmark-btn">
+
+                    <div class="hero__actions">
+                        <button class="btn btn--primary">
+                            Back this project
+                        </button>
+                        <button
+                            class="btn btn--bookmark"
+                            aria-label="Bookmark this project"
+                        >
                             <img
                                 src="./images/icon-bookmark.svg"
-                                alt="bookmark-icon"
+                                alt="Bookmark icon"
+                                class="btn__icon"
                             />
-                            <div>Bookmark</div>
+                            <span>Bookmark</span>
                         </button>
                     </div>
                 </div>
-                <div class="card growth-details">
-                    <div class="details-container">
-                        <div class="growth-numbers">
-                            <span>$89,914</span>
-                            <p>of $100,000 backed</p>
-                            <div class="horizontal-line"></div>
-                        </div>
-                        <div class="vertical-line"></div>
-                        <div class="growth-numbers">
-                            <span>5,007</span>
-                            <p>total backers</p>
-                            <div class="horizontal-line"></div>
-                        </div>
-                        <div class="vertical-line"></div>
-                        <div class="growth-numbers">
-                            <span>56</span>
-                            <p>days left</p>
-                        </div>
+
+                <!-- Stats Section -->
+                <section class="stats card">
+                    <div class="stats__data">
+                        <article class="stats__item">
+                            <h2 class="stats__number">$89,914</h2>
+                            <p class="stats__label">of $100,000 backed</p>
+                        </article>
+
+                        <article class="stats__item">
+                            <h2 class="stats__number">5,007</h2>
+                            <p class="stats__label">total backers</p>
+                        </article>
+
+                        <article class="stats__item">
+                            <h2 class="stats__number">56</h2>
+                            <p class="stats__label">days left</p>
+                        </article>
                     </div>
 
-                    <div class="progress-bar-container">
-                        <div class="progress-bar"></div>
+                    <div class="progress">
+                        <div class="progress__bar" style="width: 75%"></div>
                     </div>
-                </div>
-            </div>
-        </section>
+                </section>
+            </section>
+        </main>
         <section class="about">
             <div class="card">
                 <h3>About this project</h3>
