@@ -52,21 +52,34 @@ body {
     line-height: 1.6;
 }
 
-/* Nav Bar */
-nav {
-    z-index: 999;
-    padding: 1rem 1rem;
+/* Header */
+.site-header {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
+    padding: 1rem 2rem;
     display: flex;
+    justify-content: center;
+}
+
+.navbar {
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    align-items: center;
     justify-content: space-between;
 }
 
-.desktop-nav ul {
+.navbar__links {
     display: none;
     gap: 2rem;
+}
+
+.navbar__toggle {
+    background: none;
+    border: none;
+    cursor: pointer;
 }
 
 /* Hero */
