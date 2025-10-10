@@ -62,6 +62,115 @@
                         </p>
                     </div>
 
+                    <!-- Modal -->
+                    <div
+                        class="modal"
+                        id="back-project-modal"
+                        aria-hidden="true"
+                    >
+                        <div class="modal__overlay"></div>
+                        <div class="modal__content">
+                            <button
+                                class="modal__close"
+                                aria-label="Close modal"
+                            >
+                                &times;
+                            </button>
+                            <h2 class="modal__title">Back this project</h2>
+                            <p class="modal__description">
+                                Want to support us in bringing Mastercraft
+                                Bamboo Monitor Riser out into the world?
+                            </p>
+                            <form class="modal__form">
+                                <!-- Option 1 -->
+                                <div class="modal__option">
+                                    <input
+                                        type="radio"
+                                        id="no-reward"
+                                        name="pledge"
+                                    />
+                                    <label for="no-reward">
+                                        <h3>Pledge with no reward</h3>
+                                        <p>
+                                            Choose to support us without a
+                                            reward if you simply believe in our
+                                            project. As a backer, you will be
+                                            signed up to receive product updates
+                                            via email.
+                                        </p>
+                                    </label>
+                                </div>
+                                <!-- Option 2 -->
+                                <div class="modal__option">
+                                    <input
+                                        type="radio"
+                                        id="bamboo-stand"
+                                        name="pledge"
+                                    />
+                                    <label for="bamboo-stand">
+                                        <h3>Bamboo Stand</h3>
+                                        <span>Pledge $25 or more</span>
+                                        <p>
+                                            You get an ergonomic stand made of
+                                            natural bamboo. You’ve helped us
+                                            launch our promotional campaign, and
+                                            you’ll be added to a special Backer
+                                            member list.
+                                        </p>
+                                        <span class="modal__quantity"
+                                            >101 left</span
+                                        >
+                                    </label>
+                                </div>
+                                <!-- Option 3 -->
+                                <div class="modal__option">
+                                    <input
+                                        type="radio"
+                                        id="black-edition"
+                                        name="pledge"
+                                    />
+                                    <label for="black-edition">
+                                        <h3>Black Edition Stand</h3>
+                                        <span>Pledge $75 or more</span>
+                                        <p>
+                                            You get a Black Special Edition
+                                            stand and a personal thank you.
+                                            You’ll be added to our Backer list.
+                                            Shipping is included.
+                                        </p>
+                                        <span class="modal__quantity"
+                                            >64 left</span
+                                        >
+                                    </label>
+                                </div>
+                                <!-- Option 4 -->
+                                <div
+                                    class="modal__option modal__option--disabled"
+                                >
+                                    <input
+                                        type="radio"
+                                        id="mahogany-edition"
+                                        name="pledge"
+                                        disabled
+                                    />
+                                    <label for="mahogany-edition">
+                                        <h3>Mahogany Special Edition</h3>
+                                        <span>Pledge $200 or more</span>
+                                        <p>
+                                            You get two Special Edition Mahogany
+                                            stands, a Backer T-Shirt, and a
+                                            personal thank you. Shipping is
+                                            included.
+                                        </p>
+                                        <span class="modal__quantity"
+                                            >0 left</span
+                                        >
+                                    </label>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+
                     <div class="hero__actions">
                         <button class="btn btn--primary">
                             Back this project
@@ -190,5 +299,7 @@
         <footer class="site-footer">
             <p>&copy; 2025 Crowdfunding Project. All rights reserved.</p>
         </footer>
+
+        <script src="./script.js"></script>
     </body>
 </html>
