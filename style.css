@@ -272,11 +272,12 @@ body {
 /* Modal Styles */
 .modal {
     position: fixed;
+    padding-top: 10rem;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    display: flex;
+    display: none;
     justify-content: center;
     align-items: center;
     z-index: 1000;
